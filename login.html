@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Log in — Community Reporter</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="login">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7z" fill="#0f766e"/>
+          <circle cx="12" cy="9" r="2.6" fill="#fff"/>
+        </svg>
+        <span>Community <span class="brand-accent">Reporter</span></span>
+      </a>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Reports</a>
+        <a href="report.html" class="nav-link">+ Report an issue</a>
+        <span id="nav-actions" class="nav-actions"></span>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container auth-wrap">
+    <div class="auth-card">
+      <h1>Welcome back</h1>
+      <p class="muted">Log in to report an issue or update a report you made.</p>
+
+      <form id="login-form" class="auth-form">
+        <label>Email
+          <input type="email" name="email" autocomplete="email" required placeholder="you@example.com" />
+        </label>
+        <label>Password
+          <input type="password" name="password" autocomplete="current-password" required />
+        </label>
+        <p class="form-error" id="login-error"></p>
+        <button class="btn btn-primary btn-block btn-lg" type="submit">Log in</button>
+      </form>
+
+      <p class="auth-switch">Don't have an account? <a href="signup.html">Sign up</a></p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">Community Reporter</div>
+  </footer>
+
+  <script src="js/store.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
